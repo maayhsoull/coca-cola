@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(#CF2425, #DA6062 50%, #DA6062 0%, #CF2425);
+    background: linear-gradient(#CF2425, #DA6062 30%, #DA6062 80%, #CF2425);
 }
 
 header, footer {
@@ -46,14 +46,15 @@ main {
 }
 .background-logo {
     position: absolute;
-    width: 100%;
-    max-height: 100%;
+    width: 90%;
+    max-height: 70%;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
+    opacity: 60%;
 }
 
 .content-text {
@@ -67,9 +68,10 @@ main {
 
 .content-image {
     height: 85vh;
+    filter: drop-shadow(0 200px 40px rgb(61, 36, 36));
 }
 
-footer {
+footer { /* rodape */
     height: 100px;
     display: flex;
     justify-content: space-between;
